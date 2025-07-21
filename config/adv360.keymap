@@ -82,7 +82,7 @@
  * |--------+--------+--------+--------+--------+--------+--------|         |--------+--------+--------+--------+--------+--------+--------|
  * |  Esc   | A/Ctl  | S/Alt  | D/Gui  |F/Shift |   G    |  NONE  |         |  NONE  |   H    |J/Shift | K/GUI  | L/POG  | ;/CTRL |   '    |
  * |--------+--------+--------+--------+--------+--------+--------'         `--------+--------+--------+--------+--------+--------+--------| 
- * | LShift |   Z    |   X    |   C    |   V    |   B    |                           |   N    |   M    |   ,    |   .    |   /    | RShift |
+ * | LShift |   Z    |   X    | C/CCA  |   V    |   B    |                           |   N    |   M    | ,/CCA  | ./RALT |   /    | RShift |
  * |--------+--------+--------+--------+--------+--------'                           `--------+--------+--------+--------+--------+--------|
  * |  Fn    | Grave  |  Caps  |  Left  |  Right |                                             |  DOWN  |   UP   |   [    |   ]    |   Fn   |
  * `-------------------------------------------'                                             `--------+--------+--------+--------+--------|
@@ -98,11 +98,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1        &kp N2       &kp N3       &kp N4        &kp N5                &tog 1                                                                          &mo 3      &kp N6               &kp N7        &kp N8        &kp N9         &kp N0           &kp MINUS
-&kp TAB    &kp Q         &kp W        &kp E        &kp R         &kp T                 &none                                                                           &none      &kp Y                &kp U         &kp I         &kp O          &kp P            &kp BSLH
-&kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &hml LG(LC(LALT)) G   &none     &kp LGUI    &kp LALT               &kp RALT               &kp LGUI    &none      &hmr RG(RC(RALT)) H  &hmr RSHFT J  &hmr RGUI K   &lt 1 L        &hmr RCTRL SEMI  &kp SQT
-&sk LSHFT  &kp Z         &kp X        &kp C        &kp V         &kp B                                       &kp HOME               &kp PG_UP                                     &kp N                &kp M         &kp COMMA     &hmr RALT DOT  &kp FSLH         &kp RSHFT
-&mo 2      &kp GRAVE     &kp CAPS     &kp LEFT     &kp RIGHT                           &kp BSPC  &kp ESCAPE  &kp LG(LC(LA(LSHFT)))  &kp RG(RC(RA(RSHFT)))  &kp ENTER   &kp SPACE                       &kp DOWN      &kp UP        &kp LBKT       &kp RBKT         &mo 2
+&kp EQUAL  &kp N1        &kp N2       &kp N3                &kp N4        &kp N5                &tog 1                                                                          &mo 3      &kp N6  &kp N7        &kp N8                   &kp N9         &kp N0           &kp MINUS
+&kp TAB    &kp Q         &kp W        &kp E                 &kp R         &kp T                 &none                                                                           &none      &kp Y   &kp U         &kp I                    &kp O          &kp P            &kp BSLH
+&kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D           &hml LSHFT F  &kp G                 &none     &kp LGUI    &kp LALT               &kp RALT               &kp LGUI    &none      &kp H   &hmr RSHFT J  &hmr RGUI K              &lt 1 L        &hmr RCTRL SEMI  &kp SQT
+&sk LSHFT  &kp Z         &kp X        &hml LG(LC(LALT)) C   &kp V         &kp B                                       &kp HOME               &kp PG_UP                                     &kp N   &kp M         &hmr RG(RC(RALT)) COMMA  &hmr RALT DOT  &kp FSLH         &kp RSHFT
+&mo 2      &kp GRAVE     &kp CAPS     &kp LEFT              &kp RIGHT                           &kp BSPC  &kp ESCAPE  &kp LG(LC(LA(LSHFT)))  &kp RG(RC(RA(RSHFT)))  &kp ENTER   &kp SPACE          &kp DOWN      &kp UP                   &kp LBKT       &kp RBKT         &mo 2
             >;
         };
 
